@@ -88,29 +88,34 @@ php -d memory_limit=-1 /usr/local/bin/composer update
 
 ##### 问题：
 
+```
 使用composer 安装lumen 项目，执行composer create-project laravel/lumen --prefer-dist，命令报 [ErrorException]    zlib_decode(): data error 错
-
 解决办法：执行 composer self-update 即可
+```
 
 #### Node 错误
 
 ##### 
 
-问题1：`npm WARN optional dep failed, continuing fsevents@1.0.6`
-
-解决：`npm install -g npm@3.3.12`
+```
+问题1：npm WARN optional dep failed, continuing fsevents@1.0.6
+解决：npm install -g npm@3.3.12
+```
 
 #### phpinit 错误问题
 
-解决：rm -rf vendor/bin vendor/classpreloader vendor/phpspec vendor/phpunit vendor/psy
-
+```
+解决：
+rm -rf vendor/bin vendor/classpreloader vendor/phpspec vendor/phpunit vendor/psy
 然后  composer install
+```
 
 #### bower 的权限问题
 
-问题：`bower ESUDO         Cannot be run with sudo `
-
-解决：`sudo bower install jquery bootstrap --save --allow-root`
+```
+问题：bower ESUDO         Cannot be run with sudo 
+解决：sudo bower install jquery bootstrap --save --allow-root
+```
 
 #### 
 
