@@ -51,6 +51,8 @@
 
 ###### docker rmi ``docker images -q -a` `
 
+###### docker images|grep \<none\>|awk '{print $3}' | xargs docker rmi     删除所有标签为none的镜像：
+
 ###### docker wait <CONTAINER_ID>：阻塞对容器的其他调用方法，直到容器停止后退出
 
 ###### docker top <CONTAINER_ID>：查看容器中运行的进程
